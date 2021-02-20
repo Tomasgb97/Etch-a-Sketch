@@ -1,0 +1,126 @@
+
+@media screen and (max-width: 414px){
+
+    .gridcontainer{
+        display: grid;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(243, 243, 243, 0);
+        position: relative;
+        left: 35vw;
+        top: 25vh;
+        grid-template-columns: repeat(32, 1fr);
+        grid-template-rows: repeat(32, 1fr);
+        border-radius: 20px;
+        
+        
+        
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@font-face{
+    
+    font-family: myfont;
+    src: url(fonts/nosifer-caps/NosiferCaps-Regular.ttf);
+}
+
+@keyframes titulo{
+
+    0%{
+
+        opacity: 0%;
+        
+    }
+
+    100%{
+
+        opacity: 100%;
+    }
+
+}
+
+.background{
+
+background: #ffe259;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.gridcontainer{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(243, 243, 243, 0);
+    position: relative;
+    left: 35vw;
+    top: 5vh;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    border-radius: 20px;
+    
+    
+    
+}
+.squares{
+    
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 10px;
+    -webkit-box-shadow: inset -12px -10px 5px 0px rgba(0,0,0,0.29);
+-moz-box-shadow: inset -12px -10px 5px 0px rgba(0,0,0,0.29);
+box-shadow: inset -12px -10px 5px 0px rgba(0,0,0,0.29);
+    
+}
+.sliderContainer{
+
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: absolute;
+    top: 45vh;
+    left: 13vw;
+    background-color: #2196f32b;
+    border-radius: 5px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    box-shadow: -9px 10px 27px -11px rgb(0 0 0 / 75%);
+}
+.Gridsp{
+    font-family: 'Fredoka One', cursive;
+    font-size: x-large;
+    margin-bottom: 0px;
+}
+.gridvalue{
+
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+.header{
+
+    font-family: myfont;
+    text-align: center;
+    font-size: 70px;
+    animation:cubic-bezier(.68,.3,.6,.78);
+    animation-name: titulo;
+    animation-duration: 5s;
+    
+
+}
+.footer{
+
+    padding-right: 2vw;
+    border-left-width: 1px;
+    padding-left: 2vw;
+    left: 34vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 13vh;
+    left: 33.7vw;
+    width: fit-content;
+    font-family: 'Fredoka One';
+    background-color: #0000001f;
+    border-radius: 10px;
+    border: 0.5px white solid;
+}
